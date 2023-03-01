@@ -17,12 +17,13 @@ public class Producto {
     private String fechaIngreso;
     private String fechaVencimiento;
     private Boolean aplicaDescuento;
+    private String foto;
 
 
     public Producto() {
     }
 
-    public Producto(Integer id, String nombre, String descripcion, Integer cantidad, Double precioUnitario, String clasificacion, String marca, String presentacion, Double peso, Boolean estado, String proveedor, Double volumen, String fechaIngreso, String fechaVencimiento, Boolean aplicaDescuento) {
+    public Producto(Integer id, String nombre, String descripcion, Integer cantidad, Double precioUnitario, String clasificacion, String marca, String presentacion, Double peso, Boolean estado, String proveedor, Double volumen, String fechaIngreso, String fechaVencimiento, Boolean aplicaDescuento, String foto) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -38,8 +39,8 @@ public class Producto {
         this.fechaIngreso = fechaIngreso;
         this.fechaVencimiento = fechaVencimiento;
         this.aplicaDescuento = aplicaDescuento;
+        this.foto = foto;
     }
-
 
     public Integer getId() {
         return id;
@@ -159,5 +160,13 @@ public class Producto {
 
     public void setAplicaDescuento(Boolean aplicaDescuento) {
         this.aplicaDescuento = aplicaDescuento;
+    }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 }
